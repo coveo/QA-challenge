@@ -1,0 +1,37 @@
+{
+  "name": "Coveo",
+  "version": "1.0.0",
+  "description": "Automated test for Coveo using Nightwatchjs",
+  "homepage": "http://www.coveo.com/",
+  "main": "./lib/index.js",
+  "author": {
+    "name": "Coveo",
+    "email": "seleniumqatest@coveo.com"
+  },
+  "license": "Coveo",
+  "bugs": {
+    "url": ""
+  },
+  "engines": {
+    "node": "7.9.0"
+  },
+  "scripts": {
+    "postinstall": "node nightwatch.conf.js",
+    "test": "./node_modules/.bin/nightwatch --env local --t ./test/testDemo.js --retries 2"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "nightwatch": "^0.9.16",
+    "selenium-download": "^2.0.10"
+  },
+  "devDependencies": {
+    "mime-types": "^2.1.13"
+  },
+  "keywords": [
+    "nightwatch",
+    "testing"
+  ]
+}
