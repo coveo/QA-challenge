@@ -17,7 +17,9 @@
   },
   "scripts": {
     "postinstall": "node nightwatch.conf.js",
-    "test": "./node_modules/.bin/nightwatch --env local --t ./test/testDemo.js --retries 2"
+    "test": "./node_modules/.bin/nightwatch --env local --t ./test/testDemo.js --retries 2",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
   },
   "dependencies": {
     "nightwatch": "^0.9.16",
-    "selenium-download": "^2.0.10"
+    "selenium-download": "^2.0.10",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "mime-types": "^2.1.13"
@@ -33,5 +36,6 @@
   "keywords": [
     "nightwatch",
     "testing"
-  ]
+  ],
+  "snyk": true
 }
