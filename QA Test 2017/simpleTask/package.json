@@ -24,7 +24,7 @@
     "url": ""
   },
   "dependencies": {
-    "nightwatch": "^0.9.16",
+    "nightwatch": "^1.7.11",
     "selenium-download": "^2.0.10"
   },
   "devDependencies": {
